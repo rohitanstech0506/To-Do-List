@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/background-0.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contenair {
+  padding: 10px;
+  text-align: center;
+  width: 450px;
+  height: auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  border: 1px solid greenyellow;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px;
+}
+
+div h1 {
+  margin-bottom: 0px;
+  color: #ff7200;
+}
+
+div hr {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: none;
+  border: none;
+  margin: 10px;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+input::placeholder {
+  color: #1e1d1d;
+}
+
+button {
+  height: 43px;
+  width: 70px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+  cursor: pointer;
+  border: 1px solid red;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+
+}
+
+input,
+button {
+  display: inline;
+}
+
+button:hover {
+  background-color: #ff7200;
+  color: white;
+  border: 1px solid purple;
+  border-radius: 5px;
+}
+
+.taskList li {
+  position: relative;
+  list-style-type: none;
+  text-align: left;
+  color: #fff;
+  border: 1px solid #74fc6b;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 95%;
+  margin: 5px;
+}
+.taskList li > div:first-child {
+  display: flex;
+  align-items: center;
+  width: 20px;
+}
+.taskList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-container i {
+  margin-left: 20px;
+}
+
+li .fa-pen-to-square {
+  color: green;
+  margin-left: 10px;
+
+}
+
+li .fa-trash {
+  color: red;
+}
+
+.fa-pen-to-square:hover {
+  cursor: pointer;
+}
+
+.fa-trash:hover {
+  cursor: pointer;
+}
+
+.input-box {
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.task-text{
+  flex: 1;
+  text-align: left;
+  padding-left: 10px;
+  word-break: break-word;
+}
+@media (min-width:150px) and (max-width:550px) {
+  .contenair {
+    padding: 10px;
+    text-align: center;
+    margin: 0px 20px;
+    width: 330px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px;
+  }
+  .inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  box-shadow: none;
+  border: none;
+  margin: 10px;
+}
+input{
+  margin: 10px;
+}
+}
